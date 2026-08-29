@@ -23,7 +23,7 @@ The QLoRA project produced a **LoRA adapter** — a few hundred MB of bf16 low-r
 ## The pipeline
 
 ```
-Hskyto/toolcall_adapter  (LoRA, from the QLoRA project)
+Hskyto/lfm2.5-2.6b-toolcall-adapter (LoRA, from the QLoRA project)
             │
             │  merge.py  —  PEFT merge_and_unload() into bf16 base
             ▼
@@ -73,7 +73,7 @@ mlx_lm.convert --hf-path merged_model -q --q-bits 8 --mlx-path lfm2.5-2.6b-toolc
 ### 4 · Publish
 
 All three are pushed to the Hub:
-- 🤗 [`Hskyto/toolcall_adapter`](https://huggingface.co/Hskyto/toolcall_adapter) — the source LoRA adapter
+- 🤗 [`Hskyto/lfm2.5-2.6b-toolcall-adapter`](https://huggingface.co/Hskyto/lfm2.5-2.6b-toolcall-adapter) — the source LoRA adapter
 - 🤗 [`Hskyto/lfm2.5-2.6b-toolcall-mlx`](https://huggingface.co/Hskyto/lfm2.5-2.6b-toolcall-mlx) — MLX 16-bit
 - 🤗 [`Hskyto/lfm2.5-2.6b-toolcall-mlx-q8`](https://huggingface.co/Hskyto/lfm2.5-2.6b-toolcall-mlx-q8) — MLX 8-bit
 
